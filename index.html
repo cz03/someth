@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>PWS A6 заготовка</title>
+  </head>
+
+  <body>
+
+    <!-- bt4 wraper -->
+    <div class="container-fluid">
+
+      <div id="carouselWithIndicators" class="carousel slide">
+  
+        <ol class="carousel-indicators">
+          <li data-target="#carouselWithIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselWithIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselWithIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active item-16by9">
+            <img src="./images/1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item item-16by9">
+            <img src="./images/2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item item-16by9">
+            <img src="./images/3.jpg" class="d-block w-100">
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <h1>Форма, флажки, кнопки</h1><br>
+
+
+      <!-- first bar -->
+      <div class="barprogress">
+        <div class="progress">
+          <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+
+        <button class="btn btn-dark" id="btn0">+1%</button>
+        <button class="btn btn-dark" id="btn1">+3%</button>
+        <button class="btn btn-dark" id="btn2">+7%</button>
+      
+      </div><br><br>
+
+      
+      <!-- second bar -->
+      <!-- <div id="percentCount" class="percent-count">100%</div> -->
+      <!-- <div class="progress-bar1"> -->
+        <!-- <div id="progress" class="progress1"></div> -->
+      <!-- </div><br> -->
+
+      <!-- <button class="button" type="button" onclick="progress()">Скачать</button><br><br> -->
+
+      <form>
+
+
+        <!-- checkboxes -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check1">
+          <label class="form-check-label" for="check1">
+            флажок 1
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+          <label class="form-check-label" for="check2">
+            флажок 2
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check3">
+          <label class="form-check-label" for="check3">
+            флажок 3
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check4">
+          <label class="form-check-label" for="check4">
+            флажок 4
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check5" checked>
+          <label class="form-check-label" for="check5">
+            флажок 5
+          </label>
+        </div>
+        <br><br>
+
+
+
+        <!-- radio btns -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1">
+          <label class="form-check-label" for="radios1">
+            опция 1
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+          <label class="form-check-label" for="radios2">
+            опция 2
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3">
+          <label class="form-check-label" for="radios3">
+            опция 3
+          </label>
+        </div>
+
+      </form>
+      <br><br>
+
+      <!-- btn -->
+      <button type="button" class="btn btn-dark">А это просто тёмная кнопка</button><br><br>
+
+    </div>
+
+    <!-- libraries -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script-a6.js"></script>
+
+  </body>
+</html>
