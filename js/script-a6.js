@@ -49,7 +49,7 @@ function increasBarBy7() {
 }
 
 function checkBar() {
-	if (i <= 100) {
+	if (i < 100) {
 		console.log(i);
 		$result.html(i + '%');
 	} else {
