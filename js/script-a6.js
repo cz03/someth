@@ -1,5 +1,7 @@
 let i = 0;
 let $result = $(".result");
+let $progress_bar = $(".progress-bar");
+
 function init() {
 	$("input[type=checkbox]").change(trackCheck);
 	$("input[type=radio]").change(trackRadio);
@@ -53,7 +55,8 @@ function checkBar() {
 		console.log(i);
 		$result.html(i + '%');
 	} else {
-		$result.css('color', 'green')
+		$result.css('color', 'green');
+		$progress_bar.css('background-color', 'green');
 		$result.html("Полом!");
 	}
 }
