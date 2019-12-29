@@ -1,4 +1,5 @@
 let i = 0;
+let $result = $(".result");
 function init() {
 	$("input[type=checkbox]").change(trackCheck);
 	$("input[type=radio]").change(trackRadio);
@@ -27,6 +28,7 @@ function increasBarBy1() {
 	$("#btn0").click(function() {
 		i = i + 1;
 	    $('#progress-bar').width(i +'%');
+	    checkBar();
 	})
 }
 
@@ -34,6 +36,7 @@ function increasBarBy3() {
 	$("#btn1").click(function() {
 		i = i + 3;
 	    $('#progress-bar').width(i +'%');
+	    checkBar();
 	})
 }
 
@@ -41,7 +44,18 @@ function increasBarBy7() {
 	$("#btn2").click(function() {
 		i = i + 7;
 	    $('#progress-bar').width(i +'%');
+	    checkBar();
 	})
+}
+
+function checkBar() {
+	if (i <= 100) {
+		console.log(i);
+		$result.html(i + '%');
+	} else {
+		$result.css('color', 'green')
+		$result.html("Полом!");
+	}
 }
 
 function progress() {
